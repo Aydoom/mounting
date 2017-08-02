@@ -1,0 +1,82 @@
+.section-jurnal
+	padding-top: 70px
+	padding-bottom: 90px
+	&:after
+		display: block
+		content: " "
+		clear: both
+	.jurnal-image
+		position: relative
+		background-repeat: no-repeat 
+		background-size:  cover
+		opacity: 0.67
+		background-color: #FFF
+	.jurnal-icon
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 66px
+		height: 66px
+		transform: translate(-33px, -33px)
+		background-repeat: no-repeat
+		background-size: cover 
+		z-index: 10 
+	.l-hor
+		position: relative
+		width: col(8)
+		height: 33.3vw
+		max-height: 383px 
+		.l-img--hor
+			width: 50%
+			height: 100%
+		.l-text--hor
+			position: relative
+			width: 40%
+			height: 100%
+			padding: 0 5%
+	.l-vert
+		float: right
+		width: col(4)
+		margin-top: -33.3%
+		height: 66.6vw
+		max-height: 766px
+		.l-img--vert
+			width: 100%
+			height: 50%
+		.l-text--vert
+			position: relative
+			width: 80%
+			height: 50%
+			padding-left: 10%
+	.shadow
+		float: left
+		box-shadow: 0 0 10px rgba(221,221,221,1)
+.jurnal-label
+	font-weight: bold
+	font-size: rem(11)
+	color: #16b5ef
+	text-transform: uppercase 
+	letter-spacing: 2px
+	text-align: center
+	margin-top: 47px
+	margin-bottom: 57px
+.jurnal-title
+	font-weight: bold
+	font-size: rem(15)
+	text-transform: uppercase
+	text-align: center
+	line-height: rem(24)
+	letter-spacing: 2px
+	color: #000
+.jurnal-desc
+	line-height: rem(23)
+	margin-top: 28px
+	text-align: center
+.jurnal-number
+	position: absolute
+	bottom: 50px
+	left: 50%
+	font-family: 'Times New Roman', Arial, Helvetica, sans-serif
+	font-style: italic 
+	text-align: center
+	margin-top: 42px

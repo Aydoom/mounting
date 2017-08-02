@@ -1,0 +1,157 @@
+body
+	overflow-x: hidden
+body, div
+	margin: 0
+	padding: 0
+	width: 100%
+h1,h2,h3,h4,h5,h6,p,li,a
+	padding: 0
+	margin: 0
+	font-size: rem(18)
+	font-family:  "Open Sans", Geneva, Arial, Helvetica, sans-serif
+	color: #949494
+	line-height: rem(26)
+p.small
+	font-size: rem(14) 
+.section
+	position: relative
+	float: left
+	width: 100%
+	margin-top: 115px
+	&-gray
+		background-color: #F6F4F4
+		z-index: -2
+	&-world
+		display: block
+		position: relative
+		width: 100%
+		margin-left: auto
+		margin-right: auto
+		z-index: 1 
+		&:before
+			display: block
+			margin: 20px 8% 
+			content: " "
+			position: absolute
+			left: 0
+			top: 0
+			width: 84% 
+			height: 100%
+			opacity: 0.25 
+			background-image: url('/img/bg-world.png')
+			background-repeat: no-repeat
+			background-size: 90%
+			background-position: 50% 0%
+			z-index: -1
+		&-blue
+			&:before
+				@include --bgImg('/img/bg-world-blue.png')
+				margin: 20px 0 
+				opacity: 0.61 
+				width: 100%
+	h1
+		position: relative
+		margin-bottom: 70px
+		text-transform: uppercase
+		text-align: center
+		color: #000
+		letter-spacing: 7px
+		font-weight: 700
+		font-size: rem(30) 
+		&:after
+			content: ""
+			position: absolute
+			top: -40px
+			left: calc(50% - 39px)
+			background-image: url("/img/bg-h.png")
+			background-repeat: repeat-x 
+			height: rem(7)
+			width: 77px
+	h1.small
+		text-align: left
+		margin-bottom: 15px
+		font-family: "Open Sans", Geneva, Arial, Helvetica, sans-serif
+		font-weight: bold
+		font-size: rem(20)
+		line-height: rem(43)
+		letter-spacing: normal
+		&:after
+			left: 0
+		
+.container
+	width: 90%
+	max-width: 1150px 
+	margin: 0 auto
+.l
+	float: left
+	height: 100%
+.img
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 100% 	
+a.button
+	display: inline-block
+	-webkit-border-radius: 5px 
+	border-radius: 5px 
+	border: 3px solid #36aeea
+	text-transform: uppercase 
+	height: 35px
+	line-height: 35px 
+	width: 90%
+	text-align: center
+	font-family:  "Raleway", Geneva, Arial, Helvetica, sans-serif
+	font-weight: bold
+	font-size: rem(14)
+	text-decoration: none
+	color:#36aeea
+	letter-spacing: 3px
+	&-small
+		font-size: rem(12) 
+		width: auto
+		line-height: rem(42)
+		letter-spacing: 1px
+		padding-left: 25px 
+		padding-right: 25px 
+	&:hover
+		background-color: #36aeea
+		color:#fff
+	&-blue
+		background-color: #36aeea
+		color:#fff
+		&:hover
+			background-color: #1f85b8
+			border-color: #1f85b8 
+button
+	@extend a.button
+	background-color: #36aeea
+	color:#fff
+	cursor: pointer
+	&:hover
+		background-color: #1f85b8
+		border-color: #1f85b8 
+			
+.arrow:after
+	position: absolute
+	display: block
+	content: ""
+	width: 15px
+	height: 0px
+	border: 15px solid transparent
+	z-index: 10
+.arrow-top:after
+	border-bottom-color: #fff
+	border-top: 0
+	width: 0px
+	height: 15px
+	left: 52px
+	top: -30px
+.arrow-left:after
+	border-right-color: #fff
+	border-left: 0
+	left: -30px
+	top: 52px
+.arrow-right:after
+	border-left-color: #fff
+	border-right: 0
+	left: 100%
+	top: 52px

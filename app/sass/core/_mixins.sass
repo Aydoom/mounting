@@ -1,0 +1,49 @@
+
+@import '../app/_config'
+
+@mixin font-face($name)
+  $font-files: "../fonts/#{$name}/#{$name}"
+  @font-face
+    font-family: $name;
+    src: url("#{$font-files}.ttf") format("ttf")
+    src: url("#{$font-files}.woff") format("woff")
+    src: url("#{$font-files}.woff2") format("woff2")
+    src: url("#{$font-files}.otf") format("otf")
+    src: url("#{$font-files}.eot") format("eot")
+    font-weight: normal
+    font-style: normal
+
+
+@mixin filter($filter-type,$filter-amount)
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})')
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})')
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})')
+  -o-filter: $filter-type+unquote('(#{$filter-amount})')
+  filter: $filter-type+unquote('(#{$filter-amount})')
+
+
+@function rem($pixels, $context: $browser-context)
+  @return #{$pixels/$context}rem
+
+
+@function col($count)
+  @return ($count*100/12)+%
+
+
+// Return font-family from $fonts (app/_config.sass)
+@function -ff($font)
+  @if map-has-key($fonts, $font)
+    @return #{map-get($fonts, $font)}, Arial, Helvetica, sans-serif;
+  @else 
+    @return Arial, Helvetica, sans-serif;
+    
+@mixin --pseudo($display: block, $pos: absolute, $content: '')
+  content: $content
+  display: $display
+  position: $pos
+  
+@mixin --bgImg($name)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 50% 
+  background-image: url($name) 
