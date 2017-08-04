@@ -1,23 +1,27 @@
 body
 	overflow-x: hidden
 body, div
-	margin: 0
+	margin: 0 auto
 	padding: 0
 	width: 100%
+	max-width: 1920px 
 h1,h2,h3,h4,h5,h6,p,li,a
 	padding: 0
 	margin: 0
 	font-size: rem(18)
 	font-family:  "Open Sans", Geneva, Arial, Helvetica, sans-serif
 	color: #949494
-	line-height: rem(26)
+	line-height: rem(26)	
 p.small
-	font-size: rem(14) 
+	font-size: 13px
+	letter-spacing: 0.725px
+	line-height: 26px 
 .section
 	position: relative
 	float: left
 	width: 100%
-	margin-top: 115px
+	margin-top: 40px
+	background-color: #FFF 
 	&-gray
 		background-color: #F6F4F4
 		z-index: -2
@@ -55,9 +59,9 @@ p.small
 		text-transform: uppercase
 		text-align: center
 		color: #000
-		letter-spacing: 7px
+		letter-spacing: 1.5px
 		font-weight: 700
-		font-size: rem(30) 
+		font-size: 2rem 
 		&:after
 			content: ""
 			position: absolute
@@ -72,15 +76,15 @@ p.small
 		margin-bottom: 15px
 		font-family: "Open Sans", Geneva, Arial, Helvetica, sans-serif
 		font-weight: bold
-		font-size: rem(20)
-		line-height: rem(43)
-		letter-spacing: normal
+		font-size: 1.27rem
+		line-height: 2.1rem
+		letter-spacing: 0.9px
 		&:after
 			left: 0
 		
 .container
-	width: 90%
-	max-width: 1150px 
+	width: 96%
+	max-width: 1170px 
 	margin: 0 auto
 .l
 	float: left
@@ -96,22 +100,25 @@ a.button
 	border: 3px solid #36aeea
 	text-transform: uppercase 
 	height: 35px
-	line-height: 35px 
+	line-height: 30px
+	padding-top: 5px  
 	width: 90%
 	text-align: center
 	font-family:  "Raleway", Geneva, Arial, Helvetica, sans-serif
 	font-weight: bold
-	font-size: rem(14)
+	font-size: 12px
 	text-decoration: none
 	color:#36aeea
-	letter-spacing: 3px
+	letter-spacing: 2px
 	&-small
 		font-size: rem(12) 
-		width: auto
-		line-height: rem(42)
-		letter-spacing: 1px
-		padding-left: 25px 
-		padding-right: 25px 
+		width: 32.8%
+		text-align: center
+		line-height: 24px
+		letter-spacing: 2px
+		padding-left: 7.2%
+		word-spacing: 2.3px  
+		height: 100%
 	&:hover
 		background-color: #36aeea
 		color:#fff

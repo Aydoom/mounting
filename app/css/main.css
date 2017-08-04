@@ -2,9 +2,10 @@ body {
   overflow-x: hidden; }
 
 body, div {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  max-width: 1920px; }
 
 h1, h2, h3, h4, h5, h6, p, li, a {
   padding: 0;
@@ -15,13 +16,16 @@ h1, h2, h3, h4, h5, h6, p, li, a {
   line-height: 1.44444rem; }
 
 p.small {
-  font-size: 0.77778rem; }
+  font-size: 13px;
+  letter-spacing: 0.725px;
+  line-height: 26px; }
 
 .section {
   position: relative;
   float: left;
   width: 100%;
-  margin-top: 115px; }
+  margin-top: 40px;
+  background-color: #FFF; }
   .section-gray {
     background-color: #F6F4F4;
     z-index: -2; }
@@ -63,9 +67,9 @@ p.small {
     text-transform: uppercase;
     text-align: center;
     color: #000;
-    letter-spacing: 7px;
+    letter-spacing: 1.5px;
     font-weight: 700;
-    font-size: 1.66667rem; }
+    font-size: 2rem; }
     .section h1:after {
       content: "";
       position: absolute;
@@ -81,15 +85,15 @@ p.small {
     margin-bottom: 15px;
     font-family: "Open Sans", Geneva, Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.11111rem;
-    line-height: 2.38889rem;
-    letter-spacing: normal; }
+    font-size: 1.27rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.9px; }
     .section h1.small:after {
       left: 0; }
 
 .container {
-  width: 90%;
-  max-width: 1150px;
+  width: 96%;
+  max-width: 1170px;
   margin: 0 auto; }
 
 .l {
@@ -109,22 +113,25 @@ a.button, button {
   border: 3px solid #36aeea;
   text-transform: uppercase;
   height: 35px;
-  line-height: 35px;
+  line-height: 30px;
+  padding-top: 5px;
   width: 90%;
   text-align: center;
   font-family: "Raleway", Geneva, Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 0.77778rem;
+  font-size: 12px;
   text-decoration: none;
   color: #36aeea;
-  letter-spacing: 3px; }
+  letter-spacing: 2px; }
   a.button-small {
     font-size: 0.66667rem;
-    width: auto;
-    line-height: 2.33333rem;
-    letter-spacing: 1px;
-    padding-left: 25px;
-    padding-right: 25px; }
+    width: 32.8%;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 2px;
+    padding-left: 7.2%;
+    word-spacing: 2.3px;
+    height: 100%; }
   a.button:hover, button:hover {
     background-color: #36aeea;
     color: #fff; }
@@ -184,23 +191,24 @@ button {
 
 .section-header {
   position: relative;
-  height: 690px;
+  height: 698px;
   background-image: url(/img/header.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: auto 107.1%;
+          background-size: auto 107.1%;
   background-position: 50% 100%;
   margin-top: 0; }
   .section-header .hero {
     position: relative;
-    height: 55px;
-    padding-top: 35px;
+    height: 88px;
     background-color: rgba(255, 255, 255, 0.23); }
     .section-header .hero ul {
-      margin-top: 0; }
+      margin-top: 0;
+      padding-left: 17px;
+      padding-top: 32px; }
       .section-header .hero ul li {
         display: inline-block;
-        margin-right: 24px; }
+        margin-right: 20.1px; }
         .section-header .hero ul li a {
           display: block;
           font-size: 0.66667rem;
@@ -208,35 +216,41 @@ button {
           text-decoration: none;
           text-transform: uppercase;
           font-weight: bold;
-          padding-bottom: 10px; }
+          padding-bottom: 2px;
+          letter-spacing: 1px; }
           .section-header .hero ul li a:hover {
             border-bottom: 2px solid #9daeb6; }
         .section-header .hero ul li.active a, .section-header .hero ul li .active a:hover {
           cursor: default;
           border-bottom: 2px solid #36aeea; }
     .section-header .hero .button {
-      margin-top: -18px;
+      float: right;
+      margin-top: 22px;
+      margin-right: 15px;
       width: 75%; }
   .section-header .l-left, .section-header .l-right {
-    width: 16.7%; }
+    width: 16.66667%; }
   .section-header .l-middle {
-    width: 66.6%; }
+    width: 66.66667%; }
 
 p.logo {
+  position: relative;
   font-family: Bringin, Arial, Helvetica, sans-serif;
-  font-size: 1.61111rem;
+  font-size: 29px;
   color: #36AEEA;
   text-align: center;
-  margin-top: -3px; }
+  letter-spacing: -0.1px;
+  padding-top: 33px;
+  left: -5px; }
   p.logo span {
     color: #95a5ad; }
 
 .header {
   position: relative;
-  margin: 165px 21px 0;
-  padding: 40px 0 35px 70px;
-  width: -webkit-calc(100% - 112px);
-  width: calc(100% - 112px);
+  margin: 133px 21px 0;
+  padding: 33px 0 41px 33px;
+  width: -webkit-calc(100% - 75px);
+  width: calc(100% - 75px);
   border: 3px solid #fff;
   border-top: 0; }
   .header:before, .header:after {
@@ -247,12 +261,12 @@ p.logo {
     background: #fff;
     top: 0; }
   .header:before {
-    width: -webkit-calc(50% + 172px);
-    width: calc(50% + 172px);
-    left: 0; }
+    width: -webkit-calc(50% + 187px);
+    width: calc(50% + 187px);
+    left: -1px; }
   .header:after {
-    width: -webkit-calc(50% - 354px);
-    width: calc(50% - 354px);
+    width: -webkit-calc(50% - 384px);
+    width: calc(50% - 384px);
     right: 0; }
   .header p {
     width: 75%; }
@@ -261,27 +275,34 @@ p.logo {
     font-family: Open Sans, Arial, Helvetica, sans-serif;
     font-weight: 600;
     line-height: 1;
-    font-size: 2.77778rem;
-    letter-spacing: 10px;
+    font-size: 3.2rem;
+    letter-spacing: 6px;
     text-transform: uppercase; }
   .header .header-title2 {
     margin-top: 0.4rem;
     color: #36AEEA;
     font-family: Bringin, Arial, Helvetica, sans-serif;
-    font-size: 3.66667rem;
-    letter-spacing: 5.3px; }
+    font-size: 4rem;
+    letter-spacing: 2.2px; }
   .header .header-desc {
     width: 42%;
-    margin-top: 2rem;
-    line-height: 1.94444rem;
-    color: #fff; }
+    margin-top: 1.45rem;
+    padding-left: 4px;
+    line-height: 1.9rem;
+    font-size: 17.58px;
+    color: #fff;
+    letter-spacing: 0.2px; }
   .header .header-button {
-    margin-top: 35px;
+    margin-top: 22px;
+    margin-left: 4px;
     width: 50%; }
     .header .header-button a {
-      width: 50%;
-      height: 60px;
-      line-height: 60px; }
+      width: 45%;
+      height: 50px;
+      line-height: 45px;
+      letter-spacing: 3.8px;
+      padding-left: 2px;
+      word-spacing: -3px; }
 
 .section-blog {
   position: relative;
@@ -290,14 +311,22 @@ p.logo {
   margin-top: 0; }
   .section-blog .l-left {
     width: 33.33333%;
-    margin-top: 200px;
+    margin-top: 244px;
+    padding-left: 18px;
+    margin-right: -18px;
     height: 500px; }
+    .section-blog .l-left p {
+      padding-left: 1px; }
   .section-blog .l-blog-button {
-    margin-top: 28px; }
+    margin-top: 25px;
+    margin-left: 0;
+    width: 80%;
+    height: 32px;
+    letter-spacing: 0.1px; }
   .section-blog .l-right {
     position: relative;
     width: 58.33333%;
-    margin-left: 8.33333%; }
+    margin-left: 7.08333%; }
   .section-blog .l-blog-img--small {
     position: relative;
     width: 350px;
@@ -306,10 +335,10 @@ p.logo {
     z-index: 10; }
   .section-blog .l-blog-img--big {
     position: absolute;
-    width: 800px;
+    width: 806px;
     height: 570px;
-    top: -40px;
-    left: 8vw;
+    top: -36px;
+    left: 13%;
     z-index: 5; }
 
 .section-jurnal {
@@ -339,10 +368,21 @@ p.logo {
     -webkit-background-size: cover;
             background-size: cover;
     z-index: 10; }
+  .section-jurnal .ratio {
+    position: relative;
+    padding-top: 66.6%;
+    width: 100%; }
+  .section-jurnal .wraper-jurnal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
   .section-jurnal .l-hor {
     position: relative;
-    width: 66.66667%;
-    height: 33.3vw;
+    float: left;
+    width: 65%;
+    height: 50%;
     max-height: 383px; }
     .section-jurnal .l-hor .l-img--hor {
       width: 50%;
@@ -369,7 +409,9 @@ p.logo {
   .section-jurnal .shadow {
     float: left;
     -webkit-box-shadow: 0 0 10px #dddddd;
-            box-shadow: 0 0 10px #dddddd; }
+            box-shadow: 0 0 10px #dddddd;
+    margin-top: 8px;
+    margin-left: 15px; }
 
 .jurnal-label {
   font-weight: bold;

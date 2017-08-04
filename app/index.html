@@ -9,13 +9,43 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Document</title>
 </head>
+<style>
+	html {
+   		background-repeat: no-repeat;
+    	background-position:  50% 0;
+    	background-image: url( "img/Mountains Landing Page.png" );
+  	}
+  	body {
+  		opacity: 1;
+  	}
+  	button.test {
+  		position: fixed;
+  		top: 0;
+  		left:0;
+  		z-index: 100;
+  		opacity: 1;
+  		width: 35px;
+  		background-color: #FFF;
+  		color: #000;
+  		margin: 0;
+  		padding: 0;
+  		font-size: 10px;
+  		border: 2px solid #000; 
+  		height: 35px;
+  		line-height: 35px; 		
+  	}
+  	button.test:hover {
+  		background-color: #eee;
+  	}
+</style>
 <body>
+	<button class="test">OFF</button>
 	<!-- Begin Head -->
 		<div class="section section-header">
 			<div class="hero">
 		 		<div class="container">
 		 			<div class="l l-left">
-		 				<p class="logo">Moun<span>taing</span></p>
+		 				<p class="logo">Moun<span>tains</span></p>
 		 			</div>
 		 			<div class="l l-middle">
 			 			<ul class="nav nav-hero">
@@ -36,7 +66,7 @@
 			<div class="container">
 					<div class="header">
 						<p class="header-title1">travel with us</p>
-						<p class="header-title2">to the Mounting</p>
+						<p class="header-title2">to the Mountains</p>
 						<p class="header-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
 			 			<div class="header-button ">
 			 				<a href="#" class="button button-blue">Order now</a>
@@ -71,39 +101,41 @@
 	<!-- Begin Jurnal -->
 		<div class="section section-jurnal">
 			<div class="container">
-				<h1>Our jurnal</h1>	
-				<div class="shadow">	
-					<div class="l l-hor">
-						<div class="jurnal-image l l-img--hor" style="background-image: url(img/jurnal1.jpg)">
-							<div class="jurnal-icon" style="background-image: url(img/hart.png)"></div>
+				<h1>Our journal</h1>	
+				<div class="shadow ratio">
+					<div class="wraper-jurnal">
+						<div class="l l-hor">
+							<div class="jurnal-image l l-img--hor" style="background-image: url(img/jurnal1.jpg)">
+								<div class="jurnal-icon" style="background-image: url(img/hart.png)"></div>
+							</div>
+							<div class="l l-text--hor arrow arrow-left">
+								<p class="jurnal-label">Love</p>
+								<p class="jurnal-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, set do</p>
+								<p class="jurnal-desc">You know how to make best coffee in the universe? Or, maybe you’re very good indesigning gloves? Tell everyone about your experience and skills.</p>
+								<p class="jurnal-number">01</p>
+							</div>
 						</div>
-						<div class="l l-text--hor arrow arrow-left">
-							<p class="jurnal-label">Love</p>
-							<p class="jurnal-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, set do</p>
-							<p class="jurnal-desc">You know how to make best coffee in the universe? Or, maybe you’re very good indesigning gloves? Tell everyone about your experience and skills.</p>
-							<p class="jurnal-number">01</p>
+						<div class="l l-hor">
+							<div class="l l-text--hor arrow arrow-right">
+								<p class="jurnal-label">Tree</p>
+								<p class="jurnal-title">Lorem ipsum dolor sit amet, <del>consectetur</del> adipisicing elit,</p>
+								<p class="jurnal-desc">The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.</p>
+								<p class="jurnal-number">02</p>
+							</div>
+							<div class="jurnal-image l l-img--hor" style="background-image: url(img/jurnal2.jpg)">
+								<div class="jurnal-icon" style="background-image: url(img/leaflet.png)"></div>
+							</div>			
 						</div>
-					</div>
-					<div class="l l-hor">
-						<div class="l l-text--hor arrow arrow-right">
-							<p class="jurnal-label">Tree</p>
-							<p class="jurnal-title">Lorem ipsum dolor sit amet, <del>consectetur</del> adipisicing elit,</p>
-							<p class="jurnal-desc">The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.</p>
-							<p class="jurnal-number">02</p>
-						</div>
-						<div class="jurnal-image l l-img--hor" style="background-image: url(img/jurnal2.jpg)">
-							<div class="jurnal-icon" style="background-image: url(img/leaflet.png)"></div>
-						</div>			
-					</div>
-					<div class="l l-vert">
-						<div class="jurnal-image l l-img--vert" style="background-image: url(img/jurnal3.jpg)">
-							<div class="jurnal-icon" style="background-image: url(img/drop.png)"></div>
-						</div>
-						<div class="l l-text--vert arrow arrow-top">
-							<p class="jurnal-label">Water</p>
-							<p class="jurnal-title">LITTLE PIECES OF OUR PROUDNESS</p>
-							<p class="jurnal-desc">What do you do better than your competitors? What are you proud of? What details and advantages of your product you want people to know about?</p>
-							<p class="jurnal-number">03</p>
+						<div class="l l-vert">
+							<div class="jurnal-image l l-img--vert" style="background-image: url(img/jurnal3.jpg)">
+								<div class="jurnal-icon" style="background-image: url(img/drop.png)"></div>
+							</div>
+							<div class="l l-text--vert arrow arrow-top">
+								<p class="jurnal-label">Water</p>
+								<p class="jurnal-title">LITTLE PIECES OF OUR PROUDNESS</p>
+								<p class="jurnal-desc">What do you do better than your competitors? What are you proud of? What details and advantages of your product you want people to know about?</p>
+								<p class="jurnal-number">03</p>
+							</div>				
 						</div>
 					</div>
 				</div>
@@ -313,7 +345,8 @@
 			</div>
 		</div>
 	<!-- End Footer-->
-	<script src="js/main.js"></script>
 	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/debug.js"></script>
 </body>
 </html>
