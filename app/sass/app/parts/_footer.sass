@@ -2,6 +2,14 @@
 
 .section-clients
 	padding-top: 70px 
+	position: relative
+	background-color: transparent
+	&:before
+		@include --pseudo()
+		@include --bgImg('/img/footer.jpg')
+		width: 100%
+		height: 100%
+		background-position: 50% 100%		
 	.clients-blocks
 		margin-top: 92px
 		@extend .clearfix
@@ -31,4 +39,61 @@
 			padding-top: 25px 
 			padding-left: 14px
 	.clients-form
-		padding-top: 184px 
+		margin-top: 139px
+		margin-bottom: 163px 
+		padding: 44px 2.1% 50px 
+		height: 403px 
+		max-height: 100vh 
+		width: 39.2%
+		border-radius: 5px
+		position: relative
+		.form-bg
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5c8a94+0,207cca+62,207cca+62,2989d8+62,2989d8+62,cbced3+100&0.8+0,0.8+100 */
+			background: -moz-linear-gradient(bottom, rgba(92,138,148,0.9) 0%, rgba(110,139,154,0.9) 48%, rgba(211,212,216,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(bottom, rgba(92,138,148,0.9) 0%,rgba(110,139,154,0.9) 48%,rgba(211,212,216,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to top, rgba(92,138,148,0.9) 0%,rgba(110,139,154,0.9) 48%,rgba(211,212,216,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( endColorstr='#cccbced3', startColorstr='#d3d4d8', GradientType=0 ); /* IE6-9 */
+			z-index: 1
+			border-radius: 5px 
+		.form-title
+			position: relative
+			color: $blue
+			font-size: 2.3rem 
+			letter-spacing: 3px 
+			margin-bottom: 14px
+			z-index: 5
+			&:after
+				content: none
+		.form-desc
+			position: relative
+			text-align: center
+			letter-spacing: 0
+			margin-bottom: 32px
+			color: #383E4A 
+			z-index: 5 
+		form
+			position: relative
+			z-index: 5
+		input
+			position: relative
+			width: 96%
+			height: 55px
+			margin-bottom: 19px
+			padding-left: 4%
+			border-radius: 6px 
+			text-transform: capitalize
+			letter-spacing: 1.1px 
+			background-color: #FFF
+			z-index: 5
+		button
+			position: relative
+			width: 100%
+			height: 70px
+			border-radius: 6px
+			font-size: 16px
+			z-index: 5 
