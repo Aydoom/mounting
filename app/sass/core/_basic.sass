@@ -11,7 +11,11 @@ h1,h2,h3,h4,h5,h6,p,li,a
 	font-size: rem(18)
 	font-family:  "Open Sans", Geneva, Arial, Helvetica, sans-serif
 	color: #949494
-	line-height: rem(26)	
+	line-height: rem(26)
+.clearfix:after 
+	content: ""
+	display: block 
+	clear: both
 p.small
 	font-size: 13px
 	letter-spacing: 0.725px
@@ -50,6 +54,7 @@ p.small
 		&-blue
 			&:before
 				@include --bgImg('/img/bg-world-blue.png')
+				background-position: 57% 0% 
 				margin: 20px 0 
 				opacity: 0.61 
 				width: 100%
@@ -83,9 +88,14 @@ p.small
 			left: 0
 		
 .container
+	position: relative
 	width: 96%
 	max-width: 1170px 
 	margin: 0 auto
+	&:after
+		display: block
+		content: " "
+		clear: both
 .l
 	float: left
 	height: 100%
@@ -141,21 +151,21 @@ button
 	position: absolute
 	display: block
 	content: ""
-	width: 15px
+	width: 10px
 	height: 0px
-	border: 15px solid transparent
+	border: 10px solid transparent
 	z-index: 10
 .arrow-top:after
 	border-bottom-color: #fff
 	border-top: 0
 	width: 0px
-	height: 15px
+	height: 10px
 	left: 52px
-	top: -30px
+	top: -20px
 .arrow-left:after
 	border-right-color: #fff
 	border-left: 0
-	left: -30px
+	left: -20px
 	top: 52px
 .arrow-right:after
 	border-left-color: #fff
