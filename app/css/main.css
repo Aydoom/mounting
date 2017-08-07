@@ -953,3 +953,44 @@ p.logo {
               border-radius: 6px;
       font-size: 16px;
       z-index: 5; }
+
+.footer_bottom {
+  position: relative;
+  height: 83px;
+  float: left;
+  background-color: #3e5e69; }
+  .footer_bottom .bottom_rights, .footer_bottom .bottom_tel {
+    display: inline-block;
+    float: left;
+    height: 82px;
+    line-height: 82px;
+    margin: 3px 20px 0;
+    font-size: 18px;
+    color: #78ACBC; }
+  .footer_bottom .bottom_icons {
+    position: absolute;
+    top: 55%;
+    left: -webkit-calc(50% - 49px);
+    left: calc(50% - 49px);
+    height: 50%; }
+  .footer_bottom .bottom_tel {
+    float: right;
+    margin: 5px 16px 0px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 27px; }
+  .footer_bottom .icons {
+    display: inline-block;
+    position: relative;
+    background-image: url("/img/footer_icons.png");
+    width: 40px;
+    height: 40px;
+    -webkit-transform: translate(-20px, -20px);
+        -ms-transform: translate(-20px, -20px);
+            transform: translate(-20px, -20px);
+    margin-right: 2px; }
+    .footer_bottom .icons_twitter {
+      background-position: 0 0; }
+    .footer_bottom .icons_facebook {
+      background-position: -43px 0; }
+    .footer_bottom .icons_vk {
+      background-position: -88px 0; }
