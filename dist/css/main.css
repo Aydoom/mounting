@@ -364,21 +364,21 @@ p.logo {
     left: 13%;
     z-index: 5; }
 
-.section-jurnal {
+.section-journal {
   padding-top: 70px;
   padding-bottom: 90px; }
-  .section-jurnal:after {
+  .section-journal:after {
     display: block;
     content: " ";
     clear: both; }
-  .section-jurnal .jurnal-image {
+  .section-journal .journal-image {
     position: relative;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
     opacity: 0.67;
     background-color: #FFF; }
-  .section-jurnal .jurnal-icon {
+  .section-journal .journal-icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -391,50 +391,50 @@ p.logo {
     -webkit-background-size: cover;
             background-size: cover;
     z-index: 10; }
-  .section-jurnal .ratio {
+  .section-journal .ratio {
     position: relative;
     padding-top: 65%;
     width: 100%; }
-  .section-jurnal .wraper-jurnal {
+  .section-journal .wraper-journal {
     position: absolute;
     top: 8px;
     left: 17px;
     height: 100%;
     width: -webkit-calc(100% - 34px);
     width: calc(100% - 34px); }
-  .section-jurnal .l-hor {
+  .section-journal .l-hor {
     position: relative;
     float: left;
     width: 66.6%;
     height: 50%;
     max-height: 383px; }
-    .section-jurnal .l-hor .l-img--hor {
+    .section-journal .l-hor .l-img--hor {
       width: 50%;
       height: 100%; }
-    .section-jurnal .l-hor .l-text--hor {
+    .section-journal .l-hor .l-text--hor {
       position: relative;
       width: 44%;
       height: 100%;
       padding: 0 3%; }
-  .section-jurnal .l-vert {
+  .section-journal .l-vert {
     float: right;
     width: 33.4025%;
     margin-top: -33.5%;
     height: 100%; }
-    .section-jurnal .l-vert .l-img--vert {
+    .section-journal .l-vert .l-img--vert {
       width: 100%;
       height: 50%; }
-    .section-jurnal .l-vert .l-text--vert {
+    .section-journal .l-vert .l-text--vert {
       position: relative;
       width: 80%;
       height: 50%;
       padding-left: 10%; }
-  .section-jurnal .shadow {
+  .section-journal .shadow {
     float: left;
     -webkit-box-shadow: 0 0 10px #dddddd;
             box-shadow: 0 0 10px #dddddd; }
 
-.jurnal-label {
+.journal-label {
   font-weight: bold;
   font-size: 11px;
   color: #16b5ef;
@@ -444,7 +444,7 @@ p.logo {
   margin-top: 40px;
   margin-bottom: 43px; }
 
-.jurnal-title {
+.journal-title {
   font-weight: bold;
   font-size: 15px;
   text-transform: uppercase;
@@ -453,14 +453,14 @@ p.logo {
   letter-spacing: 2.2px;
   color: #000; }
 
-.jurnal-desc {
+.journal-desc {
   display: inline-block;
   margin: 17px 6% 0;
   line-height: 23px;
   text-align: center;
   font-size: 14px; }
 
-.jurnal-number {
+.journal-number {
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -542,8 +542,8 @@ p.logo {
   font-family: "Open Sans", Geneva, Arial, Helvetica, sans-serif; }
 
 .section_scheme {
-  margin-top: 110px;
-  margin-bottom: 90px; }
+  padding-top: 110px;
+  padding-bottom: 90px; }
 
 .title-center > h1 {
   margin-bottom: 0px; }
@@ -562,7 +562,7 @@ p.logo {
     position: absolute;
     top: 23px;
     height: 2px;
-    background-image: url("/img/bg-offer.png");
+    background-image: url("../img/bg-offer.png");
     background-repeat: repeat-x;
     left: -webkit-calc(50% + 23px);
     left: calc(50% + 23px);
@@ -574,7 +574,7 @@ p.logo {
     top: 23px;
     height: 2px;
     background-repeat: repeat-x;
-    background-image: url("/img/bg-offer.png");
+    background-image: url("../img/bg-offer.png");
     left: 0;
     width: -webkit-calc(50% - 23px);
     width: calc(50% - 23px); }
@@ -613,7 +613,7 @@ p.logo {
     height: 60px;
     width: 2px;
     background-repeat: repeat-y;
-    background-image: url("/img/bg-offer-2.png"); }
+    background-image: url("../img/bg-offer-2.png"); }
 
 .scheme_cube {
   position: relative;
@@ -621,7 +621,7 @@ p.logo {
   width: 118px;
   margin: 0 auto;
   background-repeat: no-repeat;
-  background-image: url("/img/offer-cub.png");
+  background-image: url("../img/offer-cub.png");
   -webkit-background-size: cover;
           background-size: cover; }
   .scheme_cube img {
