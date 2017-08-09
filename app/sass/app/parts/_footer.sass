@@ -1,14 +1,14 @@
 @import '../_config'
 
 .section-clients
-	padding-top: 70px 
+	padding-top: 110px 
+	padding-bottom: 13px
 	position: relative
-	background-color: transparent
 	&:before
 		@include --pseudo()
 		@include --bgImg('/img/footer.jpg')
 		width: 100%
-		height: 100%
+		height: calc(100% - 20px);
 		background-position: 50% 100%		
 	.clients-blocks
 		margin-top: 92px
@@ -41,7 +41,7 @@
 	.clients-form
 		margin-top: 139px
 		margin-bottom: 163px 
-		padding: 44px 2.1% 50px 
+		padding: 45px 2.1% 34px 
 		height: 403px 
 		max-height: 100vh 
 		width: 39.2%
@@ -99,25 +99,29 @@
 			z-index: 5
 .footer_bottom
 	position: relative
-	height: 83px
+	height: 58px
 	float: left 
 	background-color: #3e5e69 
+	padding-top: 32px
 	.bottom_rights, .bottom_tel
 		display: inline-block
 		float: left
-		height: 82px
-		line-height: 82px
-		margin: 3px 20px 0
+		line-height: 42px
+		margin: -6px 20px 0
 		font-size: 18px
 		color: #78ACBC
-	.bottom_icons
+	.l_icons
 		position: absolute
-		top: 55%
-		left: calc(50% - 49px)
+		left: 0
 		height: 50%
+		width: 100%
+		text-align: center
+	.bottom_icons
+		display: inline-block
+		margin-bottom: 0
 	.bottom_tel
 		float: right
-		margin: 5px 16px 0px
+		margin: -2px 16px 0px
 		font-family: -ff(Ro)
 		font-size: 27px
 	.icons

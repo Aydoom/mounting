@@ -56,7 +56,7 @@ function getSection() {
         min = $(".section").eq(i).offset().top;
         console.log("i=>" + i + "[" + min + ']');
         if (actY >= min) {
-            console.log("actI => " + i);
+            console.log("actI => " + i)ng;
             return i;
         }
     }

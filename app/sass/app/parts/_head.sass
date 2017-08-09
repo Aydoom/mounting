@@ -6,6 +6,7 @@
 	background-size: auto 107.1%
 	background-position: 50% 100%
 	margin-top: 0
+	padding-top: 0
 	.hero
 		position: relative
 		height: 88px
@@ -14,9 +15,19 @@
 			margin-top: 0
 			padding-left: 17px 
 			padding-top: 32px
+			@include mq(870)
+				display: none
+				background-color: #FFF
+				position: fixed
+				width: 50vw
+				top: 0
+				left: 0
+				z-index: 100
 			li 
 				display: inline-block
 				margin-right: 20.1px 
+				@include mq(870)
+					display: block
 				a
 					display: block
 					font-size: rem(12)
@@ -31,13 +42,22 @@
 				&.active a, .active a:hover
 					cursor: default
 					border-bottom: 2px solid #36aeea
+		.nav-hero__short
+			display: none
+			@include mq(870)
+				display: block
 		.button
 			float: right
 			margin-top: 22px
 			margin-right: 15px
 			width: 75% 
-	.l-left, .l-right
+	.l-left, 
 		width: col(2)
+		@include mq(870)
+			position: relative
+			left: 50%
+	.l-right
+		width: col(2) 
 	.l-middle
 		width: col(8)
 p.logo
@@ -58,6 +78,8 @@ p.logo
 	width: calc(100% - 75px)
 	border: 3px solid #fff
 	border-top: 0
+	@include mq(845)
+		border: none
 	&:before, &:after
   		display: block
   		position: absolute
@@ -65,6 +87,8 @@ p.logo
   		height: 3px
   		background: #fff
   		top: 0
+  		@include mq(845)
+  			display: none
 	&:before
   		width: calc(50% + 187px)
   		left: -1px

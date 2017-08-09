@@ -53,3 +53,7 @@
   background-size: cover
   background-position: 50% 50% 
   background-image: url($name) 
+  
+@mixin mq($width, $type: max)
+  @media only screen and (#{$type}-width: #{$width}px)
+    @content
