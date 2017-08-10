@@ -1,3 +1,7 @@
+@media only screen and (max-width: 870px) {
+  html {
+    font-size: 11px; } }
+
 body {
   overflow-x: hidden; }
 
@@ -40,7 +44,9 @@ p.small {
 .section {
   position: relative;
   float: left;
-  width: 100%;
+  width: 100vw;
+  max-width: 1920px;
+  margin: 0 auto;
   padding-top: 40px;
   background-color: #FFF; }
   .section-gray {
@@ -148,7 +154,7 @@ a.button, button {
   letter-spacing: 2px; }
   a.button-small {
     font-size: 0.66667rem;
-    width: 32.8%;
+    width: 40%;
     text-align: center;
     line-height: 24px;
     letter-spacing: 2px;
@@ -215,6 +221,7 @@ button {
 .section-header {
   position: relative;
   height: 698px;
+  max-height: 100vh;
   background-image: url(/img/header.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: auto 107.1%;
@@ -222,6 +229,9 @@ button {
   background-position: 50% 100%;
   margin-top: 0;
   padding-top: 0; }
+  @media only screen and (max-width: 796px) {
+    .section-header {
+      background-position: 0% 100%; } }
   .section-header .hero {
     position: relative;
     height: 88px;
@@ -275,10 +285,22 @@ button {
       .section-header .l-left {
         position: relative;
         left: 50%; } }
+    @media only screen and (max-width: 600px) {
+      .section-header .l-left {
+        width: 50%;
+        right: 0; } }
   .section-header .l-right {
     width: 16.66667%; }
+    @media only screen and (max-width: 600px) {
+      .section-header .l-right {
+        display: none; } }
   .section-header .l-middle {
     width: 66.66667%; }
+    @media only screen and (max-width: 600px) {
+      .section-header .l-middle {
+        position: relative;
+        width: 50%;
+        left: -50%; } }
 
 p.logo {
   position: relative;
@@ -302,7 +324,13 @@ p.logo {
   border-top: 0; }
   @media only screen and (max-width: 845px) {
     .header {
+      margin-top: 100px;
       border: none; } }
+  @media only screen and (max-width: 600px) {
+    .header {
+      padding: 33px 0 41px;
+      margin: 0 auto;
+      text-align: center; } }
   .header:before, .header:after {
     display: block;
     position: absolute;
@@ -323,6 +351,9 @@ p.logo {
     right: 0; }
   .header p {
     width: 75%; }
+    @media only screen and (max-width: 600px) {
+      .header p {
+        width: 100%; } }
   .header .header-title1 {
     color: #FFF;
     font-family: Open Sans, Arial, Helvetica, sans-serif;
@@ -336,7 +367,8 @@ p.logo {
     color: #36AEEA;
     font-family: Bringin, Arial, Helvetica, sans-serif;
     font-size: 4rem;
-    letter-spacing: 2.2px; }
+    letter-spacing: 2.2px;
+    line-height: 3rem; }
   .header .header-desc {
     width: 42%;
     margin-top: 1.45rem;
@@ -345,10 +377,21 @@ p.logo {
     font-size: 17.58px;
     color: #fff;
     letter-spacing: 0.2px; }
+    @media only screen and (max-width: 600px) {
+      .header .header-desc {
+        width: 100%; } }
   .header .header-button {
+    position: relative;
     margin-top: 22px;
     margin-left: 4px;
-    width: 50%; }
+    width: 50%;
+    z-index: 20; }
+    @media only screen and (max-width: 600px) {
+      .header .header-button {
+        width: auto; } }
+    @media only screen and (max-width: 350px) {
+      .header .header-button {
+        width: 100%; } }
     .header .header-button a {
       width: 45%;
       height: 50px;
@@ -356,47 +399,87 @@ p.logo {
       letter-spacing: 3.8px;
       padding-left: 2px;
       word-spacing: -3px; }
+      @media only screen and (max-width: 350px) {
+        .header .header-button a {
+          width: 100%; } }
 
 .section-blog {
   position: relative;
-  max-height: 670px;
+  height: 630px;
+  max-height: 100vh;
   height: 100%;
-  margin-top: 0; }
+  margin-top: 0px; }
   .section-blog .l-left {
     width: 33.33333%;
-    margin-top: 244px;
+    margin-top: 205px;
     padding-left: 18px;
     margin-right: -18px;
     height: 500px; }
+    @media only screen and (max-width: 600px) {
+      .section-blog .l-left {
+        width: 100%;
+        margin: 40px auto 20px;
+        height: auto; } }
     .section-blog .l-left p {
       padding-left: 1px; }
   .section-blog .l-blog-button {
     margin-top: 25px;
     margin-left: 0;
     width: 80%;
-    height: 32px;
+    height: 28px;
     letter-spacing: 0.1px; }
   .section-blog .l-right {
     position: relative;
     width: 58.33333%;
     margin-left: 7.08333%; }
+    @media only screen and (max-width: 600px) {
+      .section-blog .l-right {
+        margin: 0;
+        width: 100vw;
+        float: left;
+        position: static; } }
+  .section-blog .blog-ratio {
+    display: none; }
+    @media only screen and (max-width: 600px) {
+      .section-blog .blog-ratio {
+        display: block;
+        width: 0;
+        float: left;
+        content: "";
+        padding-top: -webkit-calc(50% - 30px);
+        padding-top: calc(50% - 30px); } }
+  @media only screen and (max-width: 600px) {
+    .section-blog .l-blog-img {
+      width: -webkit-calc(50% - 30px);
+      width: calc(50% - 30px);
+      padding: 0 15px;
+      float: left;
+      height: auto; } }
   .section-blog .l-blog-img--small {
     position: relative;
     width: 350px;
     height: 350px;
-    top: 277px;
+    top: 237px;
     z-index: 10; }
+    @media only screen and (max-width: 600px) {
+      .section-blog .l-blog-img--small {
+        height: 100%;
+        position: static; } }
   .section-blog .l-blog-img--big {
     position: absolute;
     width: 806px;
     height: 570px;
-    top: -36px;
+    top: -76px;
     left: 13%;
     z-index: 5; }
+    @media only screen and (max-width: 600px) {
+      .section-blog .l-blog-img--big {
+        height: 100%;
+        position: static; } }
 
 .section-journal {
-  padding-top: 70px;
-  padding-bottom: 90px; }
+  padding-top: 110px;
+  padding-bottom: 98px; }
   .section-journal:after {
     display: block;
     content: " ";
@@ -501,7 +584,7 @@ p.logo {
 
 .section-offer {
   min-height: 460px;
-  padding-top: 151px;
+  padding-top: 184px;
   padding-bottom: 9px;
   background-image: url(/img/offer-bg.jpg);
   background-repeat: no-repeat;

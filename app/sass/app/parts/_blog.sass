@@ -1,36 +1,66 @@
 .section-blog
 	position: relative
-	max-height: 670px
+	height: 630px
+	max-height: 100vh
 	height: 100%
-	margin-top: 0
+	margin-top: 0px
 	.l-left
 		width: col(4)
-		margin-top: 244px
+		margin-top: 205px
 		padding-left: 18px 
 		margin-right: -18px 
 		height: 500px
+		@include mq(600)
+			width: 100%
+			margin: 40px auto 20px
+			height: auto
 		p
 			padding-left: 1px 
 	.l-blog-button
 		margin-top: 25px
 		margin-left: 0 
 		width: 80% 
-		height: 32px
+		height: 28px
 		letter-spacing: 0.1px 
 	.l-right
 		position: relative
 		width: col(7)
 		margin-left: col(0.85)
+		@include mq(600)
+			margin: 0
+			width: 100vw
+			float: left
+			position: static
+	.blog-ratio
+		display: none
+		@include mq(600)
+			display: block
+			width: 0
+			float: left
+			content: ""
+			padding-top: calc(50% - 30px)
+	.l-blog-img
+		@include mq(600)
+			width: calc(50% - 30px)
+			padding: 0 15px
+			float: left
+			height: auto
 	.l-blog-img--small
 		position: relative
 		width: 350px
 		height: 350px
-		top: 277px
+		top: 237px
 		z-index: 10
+		@include mq(600)
+			height: 100%
+			position: static
 	.l-blog-img--big
 		position: absolute
 		width: 806px
 		height: 570px
-		top: -36px
+		top: -76px
 		left: 13%
 		z-index: 5
+		@include mq(600)
+			height: 100%
+			position: static
