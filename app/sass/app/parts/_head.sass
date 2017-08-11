@@ -8,7 +8,7 @@
 	background-position: 50% 100%
 	margin-top: 0
 	padding-top: 0
-	@include mq(796)
+	+mq(796)
 		background-position: 0% 100%
 	.hero
 		position: relative
@@ -18,7 +18,7 @@
 			margin-top: 0
 			padding-left: 17px 
 			padding-top: 32px
-			@include mq(870)
+			+mq(870)
 				display: none
 				background-color: #FFF
 				position: fixed
@@ -29,7 +29,7 @@
 			li 
 				display: inline-block
 				margin-right: 20.1px 
-				@include mq(870)
+				+mq(870)
 					display: block
 				a
 					display: block
@@ -90,10 +90,14 @@ p.logo
 	width: calc(100% - 75px)
 	border: 3px solid #fff
 	border-top: 0
-	@include mq(845)
-		margin-top: 100px
+	+mq(845)
+		bottom: 30%
+		padding: 0
+		margin: 0 auto
 		border: none
-	@include mq(600)
+		position: absolute
+		width: 100%
+	+mq(600)
 		padding: 33px 0 41px
 		margin: 0 auto
 		text-align: center

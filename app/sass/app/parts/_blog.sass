@@ -4,6 +4,9 @@
 	max-height: 100vh
 	height: 100%
 	margin-top: 0px
+	.container
+		float: left
+		width: calc(100% - 36px) 
 	.l-left
 		width: col(4)
 		margin-top: 205px
@@ -32,35 +35,36 @@
 			float: left
 			position: static
 	.blog-ratio
-		display: none
-		@include mq(600)
+		position: relative
+		+mq(600)
 			display: block
-			width: 0
-			float: left
-			content: ""
-			padding-top: calc(50% - 30px)
-	.l-blog-img
-		@include mq(600)
-			width: calc(50% - 30px)
-			padding: 0 15px
-			float: left
-			height: auto
+			content: " "
+			margin-bottom: 15px 
+			padding-top: calc(50% - 45px)
 	.l-blog-img--small
 		position: relative
 		width: 350px
 		height: 350px
 		top: 237px
 		z-index: 10
-		@include mq(600)
+		+mq(600)
+			left: 15px
+			position: absolute
+			top: 0
 			height: 100%
-			position: static
+			width: calc(50% - 22.5px)
 	.l-blog-img--big
 		position: absolute
 		width: 806px
+		max-width: 58vw 
 		height: 570px
 		top: -76px
 		left: 13%
 		z-index: 5
-		@include mq(600)
+		+mq(600)
+			right: 15px
+			position: absolute
+			top: 0
+			left: auto
 			height: 100%
-			position: static
+			width: calc(50% - 22.5px)
