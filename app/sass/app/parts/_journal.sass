@@ -1,94 +1,104 @@
 .section-journal
 	padding-top: 110px
 	padding-bottom: 98px
-	&:after
+
+.journal_ratio
+	+ratio(66.6%)
+	+mq(510)
+		+ratio(150%)
+
+.journal_block
+	+abs(0, 0, 100%, 100%)
+	box-shadow: 0px 0px 24px 2px rgba(0,0,0,0.75)
+
+.journalItem
+	float: left
+	height: 50%
+	width: 66.6%
+	+mq(510)
+		height: 33.3%
+		width: 100%
+	&-rightTop
+		width: 33.3%
+		height: 100%
+		margin-top: -33.3%
+		+mq(510)
+			width: inherit
+			height: inherit
+			margin-top: 0  
+		.journalPart
+			&_src
+				width: 100%
+				height: 50%
+				+mq(510)
+					width: 50%
+					height: 33.33333%
+			&_text
+				width: 100%
+				height: 50%
+				+mq(510)
+					width: 46%
+					height: 33.3%
+.journalPart
+	position: relative
+	float: left
+	height: 100%
+	&_src
+		width: 50%
+	&_text
+		width: 46%
+		padding: 0 2%
+		text-align: center
+	&__img
 		display: block
-		content: " "
-		clear: both
-	.journal-image
 		position: relative
-		background-repeat: no-repeat 
-		background-size:  cover
-		opacity: 0.67
-		background-color: #FFF
-	.journal-icon
-		position: absolute
-		top: 50%
-		left: 50%
-		width: 80px
-		height: 80px
-		transform: translate(-40px, -40px)
+		height: 100%
+		max-width: 100%
+	&__icon
+		+abs(50%, 50%, 64px, 64px)
+		transform: translate(-50%, -50%)
+		background-size: cover
 		background-repeat: no-repeat
-		background-size: cover 
-		z-index: 10
-	.ratio
-		position: relative
-		padding-top: 65%
-		width: 100%  
-	.wraper-journal
+	&__label
+		color: #16b5ef
+		font-size: 11px
+		font-weight: bold
+		letter-spacing: 2px
+		text-transform: uppercase 
+		margin: 40px auto 43px
+		+mq(1010)
+			margin: 10px auto
+	&__title
+		color: #000
+		font-size: 15px
+		font-weight: bold
+		letter-spacing: 2.2px
+		line-height: 24px
+		text-transform: uppercase
+		+mq(820)
+			letter-spacing: 0px
+			font-size: 14px
+			line-height: 20px
+	&__desc
+		font-size: 14px 
+		line-height: 23px
+		margin: 17px 6% 0
+		+mq(1060)
+			line-height: 1.2em
+		+mq(820)
+			overflow: hidden
+			max-height: 86px 
+			text-overflow: ellipsis
+		+mq(680)
+			display: none
+	&__number
 		position: absolute
-		top: 8px
-		left: 17px
-		height: 100%
-		width: calc(100% - 34px)
-	.l-hor
-		position: relative
-		float: left
-		width: 66.6%
-		height: 50%
-		max-height: 383px 
-		.l-img--hor
-			width: 50%
-			height: 100%
-		.l-text--hor
-			position: relative
-			width: 44%
-			height: 100%
-			padding: 0 3%
-	.l-vert
-		float: right
-		width: 33.33333%
-		margin-top: -33.5%
-		height: 100%
-		.l-img--vert
-			width: 100%
-			height: 50%
-		.l-text--vert
-			position: relative
-			width: 80%
-			height: 50%
-			padding-left: 10%
-	.shadow
-		float: left
-		box-shadow: 0 0 10px rgba(221,221,221,1)
-.journal-label
-	font-weight: bold
-	font-size: 11px
-	color: #16b5ef
-	text-transform: uppercase 
-	letter-spacing: 2px
-	text-align: center
-	margin-top: 40px
-	margin-bottom: 43px
-.journal-title
-	font-weight: bold
-	font-size: 15px
-	text-transform: uppercase
-	text-align: center
-	line-height: 24px
-	letter-spacing: 2.2px
-	color: #000
-.journal-desc
-	display: inline-block
-	margin: 17px 6% 0
-	line-height: 23px
-	text-align: center
-	font-size: 14px 
-.journal-number
-	position: absolute
-	bottom: 40px
-	left: 50%
-	font-family: 'Times New Roman', Arial, Helvetica, sans-serif
-	font-style: italic 
-	font-size: 14px
-	text-align: center
+		bottom: 40px
+		left: 50%
+		font-family: 'Times New Roman', Arial, Helvetica, sans-serif
+		font-size: 14px
+		font-style: italic
+		+mq(1060)
+			bottom: 5px
+		+mq(310)
+			display: none

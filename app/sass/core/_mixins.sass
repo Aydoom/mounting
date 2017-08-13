@@ -54,6 +54,37 @@
   background-position: 50% 50% 
   background-image: url($name) 
   
+@mixin bgi($name, $x: 50%, $y: 50%, $repeat: no, $size: cover)
+  background-image: url(../img/#{$name})
+  background-position: #{$x} #{$y}
+  background-size: #{$size}
+  @if $repeat == no
+    background-repeat: no-repeat
+  @else if $repeat == y
+    background-repeat: repeat-y
+  @else if $repeat == x
+    background-repeat: repeat-x
+   
+  
+  
 @mixin mq($width, $type: max)
   @media only screen and (#{$type}-width: #{$width}px)
     @content
+
+@mixin clearfix($type: both)
+  &:after
+    display: block
+    content: ""
+    clear: #{$type}
+
+@mixin ratio($part)
+  position: relative
+  width: 100%
+  padding-top: (#{$part})
+
+@mixin abs($top: 0, $left: 0, $width: 100%, $height: 100%)
+  position: absolute
+  top: #{$top}
+  left: #{$left}
+  width: #{$width}
+  height: #{$height}

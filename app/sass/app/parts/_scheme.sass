@@ -10,6 +10,8 @@
 	width: col(3)
 	float: left
 	text-align: center
+	+mq(750)
+		width: 100% 
 	&:after
 		@include --pseudo()
 		top: 23px
@@ -28,8 +30,12 @@
 		width: calc(50% - 23px)
 	&:first-child:before
 		width: 0
+		+mq(750)
+			width: calc(50% - 23px)
 	&:last-child:after
 		width: 0
+		+mq(750)
+			width: 50% 
 	&__number
 		border: 2px solid $blue
 		width: 42px

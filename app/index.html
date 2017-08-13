@@ -76,40 +76,50 @@
 		<div class="section section-journal">
 			<div class="container">
 				<h1>Our journal</h1>	
-				<div class="ratio">
-					<div class="shadow wraper-journal">
-						<div class="l l-hor">
-							<div class="journal-image l l-img--hor" style="background-image: url(img/journal1.jpg)">
-								<div class="journal-icon" style="background-image: url(img/hart.png)"></div>
+				<div class="journal_ratio">
+					<div class="journal_block shadow">
+						<!-- Block 1 -->
+						<div class="journalItem journalItem-leftTop">
+							<div class="journalItem_part journalPart journalPart_src">
+								<img src="img/journal1.jpg" alt="" class="journalPart__img">
+								<div class="journalPart__icon" style="background-image: url(img/hart.png)"></div>
 							</div>
-							<div class="l l-text--hor arrow arrow-left">
-								<p class="journal-label">Love</p>
-								<p class="journal-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, set do</p>
-								<p class="journal-desc">You know how to make best coffee in the universe? Or, maybe you’re very good indesigning gloves? Tell everyone about your experience and skills.</p>
-								<p class="journal-number">01</p>
+							<div class="journalItem_part journalPart journalPart_text journalPart_arrow journalPart_arrow-left">
+								<p class="journalPart__label">Love</p>
+								<p class="journalPart__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, set do</p>
+								<p class="journalPart__desc">You know how to make best coffee in the universe? Or, maybe you’re very good indesigning gloves? Tell everyone about your experience and skills.</p>
+								<p class="journalPart__number">01</p>
 							</div>
 						</div>
-						<div class="l l-hor">
-							<div class="l l-text--hor arrow arrow-right">
-								<p class="journal-label">Tree</p>
-								<p class="journal-title">Lorem ipsum dolor sit amet, <del>consectetur</del> adipisicing elit,</p>
-								<p class="journal-desc">The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.</p>
-								<p class="journal-number">02</p>
+						<!-- Block 2 -->
+						<div class="journalItem journalItem-leftBottom">
+							<div class="journalItem_part journalPart journalPart_text journalPart_arrow journalPart_arrow-right">
+								<div class="journalPart_arrow journalPart_arrow-right">
+									<p class="journalPart__label">Tree</p>
+									<p class="journalPart__title">Lorem ipsum dolor sit amet, <del>consectetur</del> adipisicing elit,</p>
+									<p class="journalPart__desc">The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.</p>
+									<p class="journalPart__number">02</p>
+								</div>
 							</div>
-							<div class="journal-image l l-img--hor" style="background-image: url(img/journal2.jpg)">
-								<div class="journal-icon" style="background-image: url(img/leaflet.png)"></div>
-							</div>			
+							<div class="journalItem_part journalPart journalPart_src">
+								<img src="img/journal2.jpg" alt="" class="journalPart__img">
+								<div class="journalPart__icon" style="background-image: url(img/leaflet.png)"></div>
+							</div>
 						</div>
-						<div class="l l-vert">
-							<div class="journal-image l l-img--vert" style="background-image: url(img/journal3.jpg)">
-								<div class="journal-icon" style="background-image: url(img/drop.png)"></div>
+						<!-- Block 3 -->
+						<div class="journalItem journalItem-rightTop">
+							<div class="journalItem_part journalPart journalPart_src">
+								<img src="img/journal3.jpg" alt="" class="journalPart__img">
+								<div class="journalPart__icon" style="background-image: url(img/drop.png)"></div>
+							</div> 
+							<div class="journalItem_part journalPart journalPart_text journalPart_arrow journalPart_arrow-top">
+								<div class="journalPart_arrow journalPart_arrow-left">
+									<p class="journalPart__label">Water</p>
+									<p class="journalPart__title">LITTLE PIECES OF OUR PROUDNESS</p>
+									<p class="journalPart__desc">What do you do better than your competitors? What are you proud of? What details and advantages of your product you want people to know about?</p>
+									<p class="journalPart__number">03</p>
+								</div>
 							</div>
-							<div class="l l-text--vert arrow arrow-top">
-								<p class="journal-label">Water</p>
-								<p class="journal-title">LITTLE PIECES OF OUR PROUDNESS</p>
-								<p class="journal-desc">What do you do better than your competitors? What are you proud of? What details and advantages of your product you want people to know about?</p>
-								<p class="journal-number">03</p>
-							</div>				
 						</div>
 					</div>
 				</div>
@@ -118,19 +128,163 @@
 	<!-- End Journal -->
 
 	<!-- Begin Offer -->
-		<!--=include parts/offer.html1 -->
+		<div class="section section-offer section-gray">
+			<div class="container">
+				<div class="title title-left">
+					<h1 class="small">Do you wanna go?</h1>
+				</div>
+				<div class="desc desc-wannago">
+					<p>Aliquam sed posuere urna, et gravida nisl. Praesent<br>
+					interdum nisl libero, pretium egestas purus eleifend vitae. 
+					Mauris suscipit vel lectus at luctus.</p>
+				</div>
+				<div class="offerForm">
+					<div class="offerForm_form">
+						<form action="#">
+							<input class="offerForm__text" type="text" placeholder="Your name:">
+							<input class="offerForm__text" type="phone" placeholder="Your phone:">
+							<button class="offerForm_btn">Order now</button>
+						</form>
+					</div>
+					<div class="offerForm_msg formRequried">
+						<img class="formRequried__img" src="img/lock.png" />
+						<span class="formRequried__msg">* Your data will not be transferred</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	<!-- End Offer -->
 
 	<!-- Begin Scheme -->
-		<!--=include parts/scheme.html1 -->
+		<div class="section section_scheme">
+			<div class="container">
+				<div class="title title-center">
+					<h1>How we work</h1>
+				</div>
+				<div class="scheme_items">
+					<div class="scheme_item">
+						<p class="scheme_item__number scheme_item__number--first">1</p>
+						<div class="scheme_img">
+							<div class="scheme_cube">
+								<img src="img/document.png" alt="">
+							</div>
+						</div>
+						<p class="scheme_item__title">Lorem ipsum dolor sit</p>
+						<p class="scheme_item__desc">amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					</div>
+		
+					<div class="scheme_item">
+						<p class="scheme_item__number">2</p>
+						<div class="scheme_img">
+							<div class="scheme_cube">
+								<img src="img/human.png" alt="">
+							</div>
+						</div>
+						<p class="scheme_item__title">Lorem ipsum dolor sit</p>
+						<p class="scheme_item__desc">amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					</div>
+		
+					<div class="scheme_item">
+						<p class="scheme_item__number">3</p>
+						<div class="scheme_img">
+							<div class="scheme_cube">
+								<img src="img/book.png" alt="">
+							</div>
+						</div>
+						<p class="scheme_item__title">Lorem ipsum dolor sit</p>
+						<p class="scheme_item__desc">amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					</div>
+		
+					<div class="scheme_item">
+						<p class="scheme_item__number scheme_item__number--last">4</p>
+						<div class="scheme_img">
+							<div class="scheme_cube">
+								<img src="img/ok.png" alt="">
+							</div>
+						</div>
+						<p class="scheme_item__title">Lorem ipsum dolor sit</p>
+						<p class="scheme_item__desc">amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	<!-- End Scheme -->
 
 	<!-- Begin Travel -->
-		<!--=include parts/travel.html1 -->
+		<div class="section section-world section-world-blue section-travel ">
+			<div class="container">
+				<h1>Travel with us</h1>
+				<ul class="travels">
+					<li class="travels_item">
+						<div class="travelCard" style="background-image: url(img/travel1.jpg)">
+							<div class="travelCard__stars travelCard__stars-4"></div>
+							<p class="travelCard__title">Carpathian</p>
+							<p class="travelCard__desc">Lorem ipsum dolor si amet, consectetur adip</p>
+							<p class="travelCard__price travelCard__price-old">3150$</p>
+							<p class="travelCard__price travelCard__price-new">$793</p>
+						</div>
+					</li>
+					<li class="travels_item">
+						<div class="travelCard" style="background-image: url(img/travel2.jpg)">
+							<div class="travelCard__stars travelCard__stars-5"></div>
+							<p class="travelCard__title">Alps</p>
+							<p class="travelCard__desc">Lorem ipsum dolor si amet, consectetur adip</p>
+							<p class="travelCard__price travelCard__price-old">3150$</p>
+							<p class="travelCard__price travelCard__price-new">$1893</p>
+						</div>
+					</li>
+					<li class="travels_item">
+						<div class="travelCard" style="background-image: url(img/travel3.jpg)">
+							<div class="travelCard__stars travelCard__stars-5"></div>
+							<p class="travelCard__title">Pyrenees</p>
+							<p class="travelCard__desc">Lorem ipsum dolor si amet, consectetur adip</p>
+							<p class="travelCard__price travelCard__price-old">3150$</p>
+							<p class="travelCard__price travelCard__price-new">$2593</p>
+						</div>
+					</li>
+					<li class="travels_item">
+						<div class="travelCard" style="background-image: url(img/travel4.jpg)">
+							<div class="travelCard__stars travelCard__stars-5"></div>
+							<p class="travelCard__title">Rocky</p>
+							<p class="travelCard__desc">Lorem ipsum dolor si amet, consectetur adip</p>
+							<p class="travelCard__price travelCard__price-old">3150$</p>
+							<p class="travelCard__price travelCard__price-new">$2123</p>
+						</div>
+					</li>
+					<li class="travels_item">
+						<div class="travelCard" style="background-image: url(img/travel5.jpg)">
+							<div class="travelCard__stars travelCard__stars-3"></div>
+							<p class="travelCard__title">Kavkaz</p>
+							<p class="travelCard__desc">Lorem ipsum dolor si amet, consectetur adip</p>
+							<p class="travelCard__price travelCard__price-old">3150$</p>
+							<p class="travelCard__price travelCard__price-new">$593</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	<!-- End Travel -->
 
 	<!-- Begin Gallery -->
-		<!--=include parts/gallery.html1 -->
+		<div class="section section-gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="gallery">
+					<div class="gallery_col gallery_col-1">
+						<div class="gallery__img gallery__img-tall" style="background-image: url(/img/gallery1.jpg)"></div>
+						<div class="gallery__img gallery__img-middle" style="background-image: url(img/gallery4.jpg)"></div>
+					</div>
+					<div class="gallery_col gallery_col-2">
+						<div class="gallery__img gallery__img-centerUp" style="background-image: url(img/gallery5.jpg)"></div>
+						<div class="gallery__img gallery__img-small" style="background-image: url(img/gallery2.jpg)"></div>
+					</div>
+					<div class="gallery_col gallery_col-3">
+						<div class="gallery__img gallery__img-tall" style="background-image: url(img/gallery3.jpg)"></div>
+						<div class="gallery__img gallery__img-middle" style="background-image: url(img/gallery6.jpg)"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	<!-- End Gallery -->
 
 	<!-- Begin Logos -->

@@ -24,8 +24,14 @@
 	list-style: none 
 	width: calc(20% - 33px)
 	margin: auto 17px
+	+mq(800)
+		float: static  
+		width: 100%
+		margin-left: auto
 	&:first-child
 		margin-left: 1.2%
+		+mq(800)
+			margin-left: auto
 	&:last-child
 		margin-right: 0
 .travelCard
@@ -37,6 +43,13 @@
 	width: calc(100% - 20px)
 	height: 370px
 	border-radius: 8px 
+	+mq(800)
+		width: 400px
+		height: 270px
+		margin: 0 auto 17px
+		padding-left: 5% 
+	+mq(470)
+		width: 85%
 	&:before
 		@include --pseudo()
 		bottom: 0
@@ -53,16 +66,16 @@
 		left: 0
 		height: calc(100% - 65px)
 		width: 100%
-		background-color: rgba(256, 256, 256, 0.32)
+		background-color: rgba(0, 0, 0, 0.32)
 		z-index: 3  
 		border-radius: 8px
 	&__stars
-		height: 16px
+		position: relative
 		width: 20px
-		margin-left: 0 
-		background-image: url(/img/star.png)
-		background-size: auto 100%
-		background-repeat: repeat-x
+		height: 16px
+		margin-left: 0
+		z-index: 5 
+		+bgi("star.png", 0, 100%, x, "auto 100%")
 		&-1
 			width: 20px
 		&-2
@@ -74,16 +87,22 @@
 		&-5
 			width: 100px
 	&__title
+		position: relative
 		margin-top: 130px
 		font-family: -ff(O)
 		font-size: rem(28)
 		color: #FFF
+		z-index: 5
+		+mq(800)
+			margin-top: 30px
 	&__desc
+		position: relative
 		color: #FFF
 		font-size: rem(16)
 		line-height: rem (22)
 		margin: 13px 20px 0 0
 		text-align: left
+		z-index: 5
 	&__price
 		color: #fff		
 		line-height: 62px
