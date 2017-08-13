@@ -8,13 +8,29 @@
 	margin: 73px auto
 	&_col
 		float: left
-		margin: 0 15px 30px 	
+		margin: 0 1% 30px 	
 		&-1
-			width: calc(24.6% - 26px)
+			width: 22%
+			+mq(700)
+				width: 39.0448%
+				margin-bottom: 0 
+			+mq(400)
+				width: 98%
+				margin-top: -15px
 		&-2
-			width: calc(32.9% - 25px)
+			width: 31.6%
+			+mq(700)
+				width: 56.9552%
+				margin-bottom: 0 
+			+mq(400)
+				width: 98%
 		&-3
-			width: calc(41.2% - 26px)
+			width: 40.4%
+			+mq(700)
+				width: 98%
+				margin-top: -15px
+			+mq(400)
+				margin-top: 0
 	&__img
 		display: inline-block
 		float: left
@@ -22,13 +38,18 @@
 		background-size: cover
 		background-position: 50% 50%
 		background-color: green
-		margin-bottom: 25px 
+		margin-bottom: 25px
 		&-tall
 			height: 343px
+			+mq(400)
+				height: 243px
 		&-middle
 			height: 281px 
 		&-small
 			height: 243px 
 		&-centerUp
 			height: 381px
-			
+			+mq(400)
+				height: 281px			
+		+mq(700)
+			margin-bottom: 15px			
